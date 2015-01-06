@@ -7,12 +7,12 @@ title: Ritma
   <p>Hello there, this web page is a collection of personal explorations on different patterns and rhythms of art. Thanks for stopping by.</p>
 
   <!-- Compositions -->
+  {% for composition in site.data.compositions %}
   <figure class="big">
-    {% for composition in site.data.compositions %}
       <img src="{{ composition.url }}" alt="">
       <figcaption>{{ composition.caption }}</figcaption>
-    {% endfor %}
   </figure>
+  {% endfor %}
 
   <hr>
 
