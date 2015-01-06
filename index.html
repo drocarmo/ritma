@@ -1,0 +1,21 @@
+---
+layout: default
+title: Ritma
+---
+
+<section class="container about">
+  <p>Hello there, this web page is a collection of personal explorations on different patterns and rhythms of art. Thanks for stopping by.</p>
+
+  <!-- Compositions -->
+  <figure class="big">
+    {% for composition in site.data.compositions %}
+      <img src="{{ composition.url }}" alt="">
+      <figcaption>{{ composition.caption }}</figcaption>
+    {% endfor %}
+  </figure>
+
+  <hr>
+
+  <p class="contact">A thing by <a href="https://twitter.com/drocarmo" target="_blank">@drocarmo</a></p>
+
+</section>

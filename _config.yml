@@ -1,0 +1,17 @@
+name: Ritma
+author: Pedro Carmo - @drocarmo
+
+markdown: kramdown
+pygments: true
+
+include:
+- .htaccess
+
+exclude:
+- README.md
+- Rakefile
+- .site
+- Gemfile.lock
+
+keep_files:
+- .git
