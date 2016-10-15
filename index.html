@@ -3,16 +3,15 @@ layout: default
 title: Ritma
 ---
 
-<section class="container about">
-  <h1 style="font-family:'Playfair Display', serif;">Hello there, this web page is <a href="https://twitter.com/drocarmo">@drocarmo's</a> collection of personal explorations on different patterns and rhythms of art. Thanks for stopping by.</h1>
+<section class="container">
+  <h1 style="font-family: 'Montserrat', sans-serif; color: #0a1efa;">Ritma</h1>
+  <p style="font-family: 'Montserrat', sans-serif; color: #0a1efa;">This a personal exploration into creating art by <a href="#">@drocarmo</a>. <br>Thanks for stopping by ✌</p>
 
   <!-- Compositions -->
   {% for composition in site.data.compositions %}
-  <figure class="big">
-      <img src="{{ composition.url }}" alt="">
-      <figcaption>{{ composition.caption }}</figcaption>
-  </figure>
+  <div style="float: left; width: 45%; margin-right: 5%; height: 500px; background:url({{ composition.url }}); background-size:contain; background-repeat: no-repeat;"></div>
   {% endfor %}
+  <div style="clear:both;"></div>
 
   <hr>
 
